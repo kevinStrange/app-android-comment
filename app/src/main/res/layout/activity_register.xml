@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.comment.tek.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        app:nv_centerText="@string/user_register"
+        app:nv_centerTextColor="@color/c_0095D9"
+        app:nv_leftTextDrawable="@drawable/back_selector"
+        app:nv_leftTextIsBackEvent="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <com.comment.tek.widget.ClearWriteEditText
+        android:id="@+id/etRegisterPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/bg_border_gray_shape"
+        android:gravity="center_vertical"
+        android:hint="@string/login_account_hint"
+        android:imeOptions="actionNext"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/c_999999"
+        android:textSize="@dimen/sp_text_size_14"
+        tools:ignore="RtlSymmetry" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_border_gray_shape"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etRegisterPwd"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/register_pwd_hint"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/c_999999"
+            android:textSize="@dimen/sp_text_size_12"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/register_clear"
+                android:layout_width="35dip"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dip"
+                android:inputType="text"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_delete"
+                android:visibility="invisible"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/register_psw_control"
+                android:layout_width="35dip"
+                android:layout_height="50dp"
+                android:layout_gravity="center|right"
+                android:scaleType="centerInside"
+                android:src="@drawable/pwd_button_selector"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<com.comment.tek.widget.ClearWriteEditText-->
+    <!--android:id="@+id/etRegisterPwd"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginEnd="15dp"-->
+    <!--android:layout_marginStart="15dp"-->
+    <!--android:background="@drawable/bg_border_gray_shape"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:hint="@string/register_pwd_hint"-->
+    <!--android:inputType="textPassword"-->
+    <!--android:maxLines="1"-->
+    <!--android:paddingStart="15dp"-->
+    <!--android:paddingEnd="15dp"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColorHint="@color/c_999999"-->
+    <!--android:textSize="@dimen/sp_text_size_14"-->
+    <!--tools:ignore="RtlSymmetry" />-->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_corner_bt_selector"
+        android:gravity="center"
+        android:text="@string/register_now"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1.0"
+        android:gravity="center|bottom"
+        android:paddingBottom="20dp"
+        android:text="@string/comment_support"
+        android:textColor="@color/c_999999"
+        android:textSize="@dimen/sp_text_size_12"
+        android:visibility="visible" />
+</LinearLayout>

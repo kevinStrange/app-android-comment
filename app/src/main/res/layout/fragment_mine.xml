@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.comment.tek.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        app:nv_centerText="@string/main_me"
+        app:nv_centerTextColor="@color/black" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/shape_bottom_gray_bg">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:drawableEnd="@mipmap/ic_enter"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/ic_account"
+            android:gravity="center_vertical"
+            android:text="@string/login"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp_text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/shape_bottom_gray_bg">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:drawableEnd="@mipmap/ic_enter"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/ic_account"
+            android:gravity="center_vertical"
+            android:text="@string/setting"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp_text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_collections"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/shape_bottom_gray_bg">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:drawableEnd="@mipmap/ic_enter"
+            android:drawablePadding="8dp"
+            android:drawableStart="@mipmap/ic_account"
+            android:gravity="center_vertical"
+            android:text="@string/mine_collections"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp_text_size_14" />
+    </RelativeLayout>
+
+</LinearLayout>
+
