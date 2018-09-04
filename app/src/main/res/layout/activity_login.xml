@@ -56,7 +56,7 @@
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/c_999999"
-            android:textSize="@dimen/sp_text_size_12" />
+            android:textSize="@dimen/sp_12" />
 
         <ImageView
             android:id="@+id/ivClear"
@@ -103,7 +103,7 @@
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/c_999999"
-            android:textSize="@dimen/sp_text_size_12" />
+            android:textSize="@dimen/sp_12" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -183,7 +183,7 @@
         android:paddingBottom="20dp"
         android:text="@string/comment_support"
         android:textColor="@color/c_999999"
-        android:textSize="@dimen/sp_text_size_12"
+        android:textSize="@dimen/sp_12"
         android:visibility="visible" />
 
 

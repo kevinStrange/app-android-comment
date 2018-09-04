@@ -19,9 +19,9 @@
             android:layout_height="match_parent"
             android:gravity="start|center_vertical"
             android:minWidth="60dp"
-            android:paddingLeft="@dimen/sp_text_size_15"
+            android:paddingLeft="@dimen/sp_15"
             android:textColor="@color/c_464646"
-            android:textSize="@dimen/sp_text_size_14"
+            android:textSize="@dimen/sp_14"
             tools:ignore="RtlSymmetry" />
 
         <ImageView
@@ -53,7 +53,7 @@
             android:minWidth="50dp"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:textColor="@color/black"
-            android:textSize="@dimen/sp_text_size_14"
+            android:textSize="@dimen/sp_14"
             tools:ignore="RtlSymmetry" />
 
         <ImageView
@@ -84,7 +84,7 @@
             android:gravity="center"
             android:singleLine="true"
             android:textColor="@color/c_333333"
-            android:textSize="@dimen/sp_text_size_16" />
+            android:textSize="@dimen/sp_16" />
 
         <ImageView
             android:id="@+id/nv_centerImageView"

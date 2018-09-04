@@ -7,92 +7,190 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.comment.tek.view.NavigationView
-        android:id="@+id/navigationView"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/white"
-        app:nv_centerText="@string/main_home_page"
-        app:nv_centerTextColor="@color/black" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="5dp" />
-
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/rl"
         android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:background="@drawable/shape_bottom_gray_bg">
-
-        <View
-            android:layout_width="4dp"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="1dp" />
+        android:layout_height="38dp"
+        android:background="@drawable/shape_bottom_gray_bg"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:text="@string/shenzhen" />
+
+        <com.comment.tek.widget.ClearWriteEditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
             android:layout_marginLeft="@dimen/dp_15"
             android:layout_marginRight="@dimen/dp_15"
-            android:drawableEnd="@mipmap/ic_enter"
-            android:drawablePadding="8dp"
-            android:drawableStart="@mipmap/ic_account"
+            android:background="@drawable/bg_home_page_search"
             android:gravity="center_vertical"
-            android:text="@string/login"
+            android:hint="深圳周边"
+            android:paddingStart="15dp"
             android:textColor="@color/c_666666"
-            android:textSize="@dimen/sp_text_size_14" />
-    </RelativeLayout>
+            android:textSize="@dimen/sp_14"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+    </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/rl_setting"
+
+    <com.comment.banner.view.Banner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner2"
         android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:background="@drawable/shape_bottom_gray_bg">
+        android:layout_height="100dp"
+        app:indicator_drawable_selected="@color/c_5CB85C"
+        app:indicator_drawable_unselected="@color/white"
+        app:indicator_height="4dp"
+        app:indicator_margin="4dp"
+        app:indicator_width="20dp" />
 
-        <View
-            android:layout_width="4dp"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="1dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/dp_15"
-            android:layout_marginRight="@dimen/dp_15"
-            android:drawableEnd="@mipmap/ic_enter"
-            android:drawablePadding="8dp"
-            android:drawableStart="@mipmap/ic_account"
-            android:gravity="center_vertical"
-            android:text="@string/setting"
-            android:textColor="@color/c_666666"
-            android:textSize="@dimen/sp_text_size_14" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rl_mine_collections"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:background="@drawable/shape_bottom_gray_bg">
-
-        <View
-            android:layout_width="4dp"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="1dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/dp_15"
-            android:layout_marginRight="@dimen/dp_15"
-            android:drawableEnd="@mipmap/ic_enter"
-            android:drawablePadding="8dp"
-            android:drawableStart="@mipmap/ic_account"
-            android:gravity="center_vertical"
-            android:text="@string/mine_collections"
-            android:textColor="@color/c_666666"
-            android:textSize="@dimen/sp_text_size_14" />
-    </RelativeLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/cate"
+            android:textSize="@dimen/sp_18" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/periphery_tourism"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/hotel_accommodations"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/health_care"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/cate"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/periphery_tourism"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/hotel_accommodations"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/main_home_page"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/recommended"
+        android:textSize="@dimen/sp_12" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_15"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/cate"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_15"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/cate"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_15"
+            android:drawableTop="@mipmap/ic_account"
+            android:gravity="center"
+            android:text="@string/cate"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
 </LinearLayout>
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/shape_bottom_gray_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:text="@string/shenzhen" />
+
+        <com.comment.tek.widget.ClearWriteEditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@drawable/bg_home_page_search"
+            android:gravity="center_vertical"
+            android:hint="深圳周边"
+            android:paddingStart="15dp"
+            android:textColor="@color/c_666666"
+            android:textSize="@dimen/sp_14"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -6,6 +6,7 @@ import android.content.Context;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 
+import com.comment.tek.activity.R;
 import com.comment.tek.util.APPInfoUtils;
 import com.comment.tek.util.Lg;
 import com.lzy.okgo.OkGo;
@@ -16,6 +17,9 @@ import com.lzy.okgo.cookie.store.SPCookieStore;
 import com.lzy.okgo.interceptor.HttpLoggingInterceptor;
 import com.lzy.okgo.model.HttpHeaders;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
@@ -28,7 +32,8 @@ import static com.lzy.okgo.OkGo.DEFAULT_MILLISECONDS;
  */
 
 public class BaseApplication extends Application {
-
+    public static List<?> banner_images=new ArrayList<>();
+    public static List<String> banner_titles=new ArrayList<>();
     @SuppressLint("StaticFieldLeak")
     private static Context mContext;
 
@@ -38,6 +43,12 @@ public class BaseApplication extends Application {
         mContext = this;
         APPInfoUtils appInfoUtils = new APPInfoUtils();
         appInfoUtils.initAppInfo(mContext);
+        String[] urls = getResources().getStringArray(R.array.url);
+        String[] tips = getResources().getStringArray(R.array.title);
+        List list = Arrays.asList(urls);
+        banner_images = new ArrayList(list);
+        List list1 = Arrays.asList(tips);
+        banner_titles= new ArrayList(list1);
 //        initOKHttpClient();
     }
 

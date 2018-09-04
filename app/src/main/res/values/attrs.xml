@@ -94,4 +94,12 @@
         <attr name="left_back" format="reference" />
         <attr name="right_back" format="reference" />
     </declare-styleable>
+
+    <!--<resources>-->
+        <!--<declare-styleable name="XlHRatingBar">-->
+            <!--<attr name="numStars" format="integer" />&lt;!&ndash;总的星星数&ndash;&gt;-->
+            <!--<attr name="rating" format="float" />&lt;!&ndash;当前已选中的星星个数&ndash;&gt;-->
+            <!--<attr name="ratingViewClass" format="string" />-->
+        <!--</declare-styleable>-->
+    <!--</resources>-->
 </resources>

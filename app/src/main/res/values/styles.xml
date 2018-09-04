@@ -9,7 +9,7 @@
     </style>
     <!--主界面菜单栏样式-->
     <style name="main_tab_style">
-        <item name="android:textSize">@dimen/sp_text_size_10</item>
+        <item name="android:textSize">@dimen/sp_10</item>
         <item name="android:textColor">@color/main_table_text_selector</item>
         <item name="android:gravity">center</item>
         <item name="android:button">@null</item>

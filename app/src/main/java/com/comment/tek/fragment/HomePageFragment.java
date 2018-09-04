@@ -6,15 +6,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.comment.banner.interfaces.IOnBannerListener;
+import com.comment.banner.util.BannerConfig;
+import com.comment.banner.view.Banner;
 import com.comment.tek.activity.R;
+import com.comment.tek.base.BaseApplication;
 import com.comment.tek.base.BaseFragment;
+import com.comment.tek.widget.GlideImageLoader;
 
 /**
  * Created by huanghongfa on 2018/8/24.
  * 首页
  */
 
-public class HomePageFragment extends BaseFragment implements View.OnClickListener {
+public class HomePageFragment extends BaseFragment implements View.OnClickListener, IOnBannerListener {
 
 
     @Nullable
@@ -32,6 +37,13 @@ public class HomePageFragment extends BaseFragment implements View.OnClickListen
     @Override
     public void initView() {
         super.initView();
+        Banner banner2 = findViewById(R.id.banner2);
+        banner2.setImages(BaseApplication.banner_images)
+                .setBannerTitles(BaseApplication.banner_titles)
+                .setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE)
+                .setImageLoader(new GlideImageLoader())
+                .setOnBannerListener(this)
+                .start();
     }
 
     @Override
@@ -41,4 +53,8 @@ public class HomePageFragment extends BaseFragment implements View.OnClickListen
 
     }
 
+    @Override
+    public void OnBannerClick(int position) {
+        toast("点击了" + position);
+    }
 }

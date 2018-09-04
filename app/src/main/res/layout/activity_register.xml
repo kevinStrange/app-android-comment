@@ -37,7 +37,7 @@
         android:paddingStart="15dp"
         android:singleLine="true"
         android:textColorHint="@color/c_999999"
-        android:textSize="@dimen/sp_text_size_14"
+        android:textSize="@dimen/sp_14"
         tools:ignore="RtlSymmetry" />
 
     <Space
@@ -67,7 +67,7 @@
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="@color/c_999999"
-            android:textSize="@dimen/sp_text_size_12"
+            android:textSize="@dimen/sp_12"
             tools:ignore="RtlSymmetry" />
 
         <LinearLayout
@@ -145,6 +145,6 @@
         android:paddingBottom="20dp"
         android:text="@string/comment_support"
         android:textColor="@color/c_999999"
-        android:textSize="@dimen/sp_text_size_12"
+        android:textSize="@dimen/sp_12"
         android:visibility="visible" />
 </LinearLayout>
